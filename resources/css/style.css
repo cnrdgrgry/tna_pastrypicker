@@ -23,11 +23,12 @@ html {
   color: #321313;
   background-color: #f9f5f0;
   text-align: center;
+  max-width: 98%;
+  margin: 0 auto;
 }
 
 h1 {
   margin: 0 auto;
-  padding: 0 0.5rem 0 0.5rem;
   width: 100%;
   height: 100%;
   font-weight: 500;
