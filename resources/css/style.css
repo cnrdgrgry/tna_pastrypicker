@@ -1,0 +1,169 @@
+/*..first-color { 
+	background: #f9f5f0; 
+}
+	
+.second-color { 
+	background: #f2ead3; 
+}
+
+.third-color { 
+	background: #f4991a; 
+}
+
+.fourth-color { 
+	background: #321313;  */
+
+/*Page setup*/
+
+html {
+  font-size: 16px;
+  letter-spacing: 0.025rem;
+  font-family: "Raleway";
+  font-weight: 300;
+  color: #321313;
+  background-color: #f9f5f0;
+  text-align: center;
+}
+
+h1 {
+  margin: 1rem auto;
+  padding: 0 0.5rem 0 0.5rem;
+  width: max-content;
+  font-weight: 500;
+  font-size: 3rem;
+}
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+}
+
+h2,
+h3,
+h4 {
+  font-weight: 400;
+}
+
+/* link behaviours*/
+
+a,
+h1:hover,
+.menu:hover,
+.assist:hover,
+.waste:hover,
+.locations:hover,
+.staffcontainer:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+/* Hero Splash Logo */
+
+.hero {
+  background-image: url("../img/backgrounnd_hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 15rem;
+  margin: 0;
+  padding: 0;
+  border: 0.2rem solid #f2ead3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.hero div {
+  background-color: #f9f5f0;
+  opacity: 0.8;
+  font-weight: 500;
+  width: max-content;
+  height: max-content;
+  margin: 1rem auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* What we do */
+.products .container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  background-color: #f2ead3;
+}
+
+.menu,
+.assist,
+.waste,
+.locations {
+  margin: 0;
+  padding: 0.1rem;
+  flex: 1;
+  color: #321313;
+
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+.products h4 {
+  text-decoration: underline;
+}
+
+/*Staff*/
+.team .container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.staff {
+  margin: 0;
+  padding: 0.5rem;
+
+  flex: 1;
+}
+
+.staffcontainer {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.staffcontainer p,
+h4 {
+  margin: 0 auto;
+}
+/* Footer 8*/
+
+footer {
+  background-image: url("../img/donuts.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 15rem;
+  margin: 0;
+  padding: 0;
+  color: #321313;
+  font-weight: 600;
+  align-content: end;
+}
+
+footer {
+  margin: 2rem 0 0 0;
+}
+
+footer .container {
+  background-color: #f9f5f0;
+  width: max-content;
+  height: max-content;
+  padding: 0 0 0.05rem 0.05rem;
+  opacity: 0.8;
+  margin: 1rem auto;
+  padding-top: 0.4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
