@@ -18,7 +18,7 @@
 html {
   font-size: 16px;
   letter-spacing: 0.025rem;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 300;
   color: #321313;
   background-color: #f9f5f0;
@@ -26,11 +26,13 @@ html {
 }
 
 h1 {
-  margin: 1rem auto;
+  margin: 0 auto;
   padding: 0 0.5rem 0 0.5rem;
-  width: max-content;
+  width: 100%;
+  height: 100%;
   font-weight: 500;
   font-size: 3rem;
+  background-color: #f2ead3;
 }
 h1,
 h2,
@@ -47,7 +49,7 @@ h4 {
 
 /* link behaviours*/
 
-a,
+a:hover,
 h1:hover,
 .menu:hover,
 .assist:hover,
@@ -55,7 +57,20 @@ h1:hover,
 .locations:hover,
 .staffcontainer:hover {
   cursor: pointer;
+  color: black;
   opacity: 0.7;
+  font-weight: bolder;
+}
+
+.products img:hover,
+.staffcontainer img:hover {
+  box-shadow: 0 -1px 2px #321313;
+}
+
+.products img:active,
+.staffcontainer img:active {
+  box-shadow: 0 1px 2px #321313;
+  opacity: 0.9;
 }
 
 /* Hero Splash Logo */
@@ -65,7 +80,7 @@ h1:hover,
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 15rem;
+  height: 20rem;
   margin: 0;
   padding: 0;
   border: 0.2rem solid #f2ead3;
@@ -84,14 +99,18 @@ h1:hover,
   margin: 1rem auto;
   padding-left: 1rem;
   padding-right: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px #756060;
 }
 
 /* What we do */
 .products .container {
   display: flex;
-  gap: 2rem;
   flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 2rem;
   background-color: #f2ead3;
+  position: relative;
 }
 
 .menu,
@@ -111,17 +130,26 @@ h1:hover,
   text-decoration: underline;
 }
 
+.products img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px #321313;
+}
+
 /*Staff*/
 .team .container {
   display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
   gap: 2rem;
   flex-wrap: wrap;
+  background-color: #f2ead3;
 }
 
 .staff {
   margin: 0;
   padding: 0.5rem;
-
   flex: 1;
 }
 
@@ -136,6 +164,13 @@ h1:hover,
 .staffcontainer p,
 h4 {
   margin: 0 auto;
+}
+
+.staffcontainer img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px #321313;
 }
 /* Footer 8*/
 
@@ -157,13 +192,17 @@ footer {
 }
 
 footer .container {
+  position: relative;
+  top: 20%;
   background-color: #f9f5f0;
   width: max-content;
   height: max-content;
   padding: 0 0 0.05rem 0.05rem;
   opacity: 0.8;
-  margin: 1rem auto;
+  margin: 0 auto;
   padding-top: 0.4rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px #756060;
 }
